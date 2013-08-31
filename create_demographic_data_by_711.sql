@@ -3,7 +3,7 @@ WITH buffer AS (
   --create buffer shapes around points
   SELECT 
     gid, 
-    ST_Buffer(geom::geography,100) AS geom 
+    ST_Buffer(geom::geography,100) AS geom --100 meter radius for the buffer
   FROM demographics.manhattan_711
 ), transform AS (
   --convert the buffer from geography to geometry
@@ -16,7 +16,7 @@ WITH buffer AS (
   SELECT 
     t.gid AS gid, 
     dp1.geoid10 AS geoid10,
-    ST_Area(ST_Intersection(t.geom,dp1.geom))/ST_Area(t.geom) AS weight
+    ST_Area(ST_Intersection(t.geom,dp1.geom))/ST_Area(dp1.geom) AS weight
   FROM transform AS t
   INNER JOIN demographics.dp1 AS dp1
     ON ST_Intersects(t.geom, dp1.geom)
@@ -289,4 +289,4 @@ WITH buffer AS (
     --pop in renter occupied housing
     ROUND(popInRenterOccupiedHousingUnits/total_pop,2) as percent_renter_occuped_housing
   FROM dem_raw_counts
-  ;
+  );

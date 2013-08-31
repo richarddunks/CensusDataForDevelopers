@@ -476,3 +476,699 @@ CREATE TABLE $DB_SCHEMA.new_dp1 AS (
 );
 
 
+DROP TABLE $DB_SCHEMA.dp1;
+ALTER TABLE $DB_SCHEMA.new_dp1 RENAME TO dp1;
+
+--Change data type
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_under_5 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_5_9 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_10_14 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_15_19 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_20_24 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_25_29 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_30_34 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_35_39 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_40_44 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_45_49 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_50_54 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_55_59 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_60_64 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_65_69 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_70_74 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_75_79 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_80_84 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_85_over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_under_5 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_5_9 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_10_14 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_15_19 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_20_24 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_25_29 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_30_34 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_35_39 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_40_44 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_45_49 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_50_54 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_55_59 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_60_64 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_65_69 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_70_74 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_75_79 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_80_84 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_85_over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_under_5 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_5_9 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_10_14 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_15_19 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_20_24 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_25_29 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_30_34 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_35_39 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_40_44 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_45_49 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_50_54 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_55_59 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_60_64 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_65_69 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_70_74 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_75_79 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_80_84 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_85_over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_16 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_16 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_16 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_21 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_21 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_21 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_62 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_62 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_62 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_65 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_65 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_65 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_white TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_aa TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_aian TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_asianindian TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_chinese TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_filipino TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_japanese TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_korean TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_vietnamese TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_asian_other TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_nhopi TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_nhopi_nh TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_nhopi_guam TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_nhopi_samoan TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_nhopi_opi TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_onerace_other TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_tworaceormore TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_tworaceormore_whiteaian TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_tworaceormore_whiteasian TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_tworaceormore_whiteaa TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_tworaceormore_whiteother TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN whitealoneorcombo TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN aaaloneorcombo TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN aianaloneorcombo TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN asianaloneorcombo TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nhopialoneorcombo TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN otheraloneorcombo TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_hispanyrace TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispanyrace_mexican TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispanyrace_puertorican TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispanyrace_cuban TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispanyrace_otherhisp TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_nonhisp TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_hisp TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_whitealone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_aaalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_aianalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_asianalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_nhopialone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_otheralone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_twoormore TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_whitealone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_aaalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_aianalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_asianalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_nhopialone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_otheralone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonhisp_twoormore TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_inhh TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_householder TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_spouse TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_child TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_child_ownchildunder18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_otherrelative TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_otherrelative_under18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_otherrelative_65over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives_under18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives_65over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives_unmarriedpartner TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_in_group TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_inst TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_inst_male TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_inst_female TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_noninst TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_noninst_male TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_noninst_female TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_households TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_family TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_family_ownchildrenunder18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_husbandwifefam TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_husbandwifefam_ownchildrenunder18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_malenowifefam TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_malenowifefam_ownchildrenunder18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_femalenohusbandfam TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_femalenohusbandfam_ownchildrenunder18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonfamily TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonfamily_livingalone TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonfamily_livingalone_male TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonfamily_livingalone_male_65over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonfamily_livingalone_female TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonfamily_livingalone_female_65over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_withunder18 TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_with65over TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_housingunits TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_occupied TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant_forrent TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant_rentednotocc TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant_forsaleonly TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant_soldnotocc TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant_occasionaluse TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_vacant_othervacant TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_housingunits_occupied TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_occupied_owneroccupied TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingunits_occupied_renteroccupied TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN popinowneroccupiedhousingunits TYPE numeric;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN popinrenteroccupiedhousingunits TYPE numeric;
+
+
+--Add column constraints
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN aland10 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN awater10 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN intptlat10 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN intptlon10 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_under_5 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_5_9 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_10_14 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_15_19 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_20_24 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_25_29 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_30_34 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_35_39 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_40_44 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_45_49 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_50_54 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_55_59 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_60_64 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_65_69 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_70_74 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_75_79 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_80_84 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_85_over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_under_5 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_5_9 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_10_14 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_15_19 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_20_24 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_25_29 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_30_34 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_35_39 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_40_44 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_45_49 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_50_54 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_55_59 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_60_64 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_65_69 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_70_74 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_75_79 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_80_84 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN male_85_over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_under_5 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_5_9 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_10_14 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_15_19 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_20_24 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_25_29 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_30_34 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_35_39 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_40_44 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_45_49 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_50_54 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_55_59 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_60_64 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_65_69 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_70_74 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_75_79 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_80_84 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN female_85_over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN median_age SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN median_age_male SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN median_age_female SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_16 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_16 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_16 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_21 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_21 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_21 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_62 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_62 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_62 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop_over_65 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_male_over_65 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_female_over_65 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop2 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_white SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_aa SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_aian SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_asianIndian SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_chinese SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_filipino SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_japanese SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_korean SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_vietnamese SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_asian_other SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_nhopi SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_nhopi_nh SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_nhopi_guam SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_nhopi_samoan SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_nhopi_opi SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_oneRace_other SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_twoRaceOrMore SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_twoRaceOrMore_whiteAian SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_twoRaceOrMore_whiteAsian SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_twoRaceOrMore_whiteAA SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_twoRaceOrMore_whiteOther SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN whiteAloneOrCombo SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN aaAloneOrCombo SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN aianAloneOrCombo SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN asianAloneOrCombo SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nhopiAloneOrCombo SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN otherAloneOrCombo SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop3 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_hispAnyRace SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispAnyRace_mexican SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispAnyRace_puertoRican SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispAnyRace_cuban SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hispAnyRace_otherHisp SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_nonHisp SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop4 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_hisp SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_whiteAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_aaAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_aianAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_asianAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_nhopiAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_otherAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hisp_twoOrMore SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_nonHisp2 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_whiteAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_aaAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_aianAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_asianAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_nhopiAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_otherAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN nonHisp_twoOrMore SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_pop5 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_inHH SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_householder SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_spouse SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_child SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_child_ownChildUnder18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_otherRelative SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_otherRelative_under18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_otherRelative_65over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives_under18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives_65over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_hh_nonrelatives_unmarriedPartner SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_in_group SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_inst SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_inst_male SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_inst_female SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_noninst SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_noninst_male SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN pop_group_noninst_female SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_households SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_family SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_family_ownChildrenUnder18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_husbandWifeFam SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_husbandWifeFam_ownChildrenUnder18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_maleNoWifeFam SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_maleNoWifeFam_ownChildrenUnder18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_femaleNoHusbandFam SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_femaleNoHusbandFam_ownChildrenUnder18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonFamily SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonFamily_livingAlone SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonFamily_livingAlone_male SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonFamily_livingAlone_male_65over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonFamily_livingAlone_female SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_nonFamily_livingAlone_female_65over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_withUnder18 SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN hh_with65over SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN avgHouseholdSize SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN avgFamilySize SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_HousingUnits SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_occupied SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant_forRent SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant_rentedNotOcc SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant_forSaleOnly SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant_soldNotOcc SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant_occasionalUse SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_vacant_otherVacant SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN homeownerVacancyRate SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN rentalVacancyRate SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN total_housingUnits_occupied SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_occupied_ownerOccupied SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN housingUnits_occupied_renterOccupied SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN popInOwnerOccupiedHousingUnits SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN popInRenterOccupiedHousingUnits SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN avgHouseholdSizeOwnerOccupiedHousingUnits SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN avgHouseholdSizeRenterOccupiedHousingUnits SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN shape_area SET NOT NULL;
+ALTER TABLE $DB_SCHEMA.dp1 ALTER COLUMN shape_leng SET NOT NULL;
+
+--Add primary key constraints
+ALTER TABLE $DB_SCHEMA.dp1 DROP CONSTRAINT IF EXISTS new_dp1_pkey;
+ALTER TABLE $DB_SCHEMA.dp1 DROP CONSTRAINT IF EXISTS dp1_pkey;
+ALTER TABLE $DB_SCHEMA.dp1 ADD PRIMARY KEY (geoid);
+
+--Add table comments
+COMMENT ON TABLE $DB_SCHEMA.dp1 IS 'Demographic data by US Census Tract from Demographic Profile Table 1 availabe at http://www2.census.gov/geo/tiger/TIGER2010DP1/Tract_2010Census_DP1.zip';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.geoid IS 'Census tract identifier; a concatenation of 2010 Census state FIPS code, county FIPS code, and census tract code; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.aland10 IS '2010 Census land area (square meters); Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.awater10 IS '2010 Census water area (square meters); Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.intptlat10 IS '2010 Census latitude of the internal point; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.intptlon10 IS '2010 Census longitude of the internal point; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop IS 'Total population in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_under_5 IS 'Total population in tract under 5 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_5_9 IS 'Total population in tract between the ages of 5 and 9; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_10_14 IS 'Total population in tract between the ages of 10 and 14; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_15_19 IS 'Total population in tract between the ages of 15 and 19; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_20_24 IS 'Total population in tract between the ages of 20 and 24; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_25_29 IS 'Total population in tract between the ages of 25 and 29; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_30_34 IS 'Total population in tract between the ages of 30 and 34; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_35_39 IS 'Total population in tract between the ages of 35 and 39; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_40_44 IS 'Total population in tract between the ages of 40 and 44; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_45_49 IS 'Total population in tract between the ages of 45 and 49; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_50_54 IS 'Total population in tract between the ages of 50 and 54; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_55_59 IS 'Total population in tract between the ages of 55 and 59; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_60_64 IS 'Total population in tract between the ages of 60 and 64; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_65_69 IS 'Total population in tract between the ages of 65 and 69; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_70_74 IS 'Total population in tract between the ages of 70 and 74; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_75_79 IS 'Total population in tract between the ages of 75 and 79; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_80_84 IS 'Total population in tract between the ages of 80 and 84; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_85_over IS 'Total population in the tract 85 years of age or over; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_male IS 'Total population of males in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_under_5 IS 'Total population of males in tract under 5 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_5_9 IS 'Total population of males in tract between the ages of 5 and 9; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_10_14 IS 'Total population of males in tract between the ages of 10 and 14; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_15_19 IS 'Total population of males in tract between the ages of 15 and 19; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_20_24 IS 'Total population of males in tract between the ages of 20 and 24; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_25_29 IS 'Total population of males in tract between the ages of 25 and 29; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_30_34 IS 'Total population of males in tract between the ages of 30 and 34; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_35_39 IS 'Total population of males in tract between the ages of 35 and 39; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_40_44 IS 'Total population of males in tract between the ages of 40 and 44; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_45_49 IS 'Total population of males in tract between the ages of 45 and 49; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_50_54 IS 'Total population of males in tract between the ages of 50 and 54; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_55_59 IS 'Total population of males in tract between the ages of 55 and 59; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_60_64 IS 'Total population of males in tract between the ages of 60 and 64; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_65_69 IS 'Total population of males in tract between the ages of 65 and 69; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_70_74 IS 'Total population of males in tract between the ages of 70 and 74; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_75_79 IS 'Total population of males in tract between the ages of 75 and 79; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_80_84 IS 'Total population of males in tract between the ages of 80 and 84; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.male_85_over IS 'Total population of males in tract 85 years of age and over; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_female IS 'Total population of females in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_under_5 IS 'Total population of females in tract under 5 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_5_9 IS 'Total population of females in tract between the ages of 5 and 9; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_10_14 IS 'Total population of females in tract between the ages of 10 and 14; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_15_19 IS 'Total population of females in tract between the ages of 15 and 19; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_20_24 IS 'Total population of females in tract between the ages of 20 and 24; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_25_29 IS 'Total population of females in tract between the ages of 25 and 29; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_30_34 IS 'Total population of females in tract between the ages of 30 and 34; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_35_39 IS 'Total population of females in tract between the ages of 35 and 39; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_40_44 IS 'Total population of females in tract between the ages of 40 and 44; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_45_49 IS 'Total population of females in tract between the ages of 45 and 49; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_50_54 IS 'Total population of females in tract between the ages of 50 and 54; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_55_59 IS 'Total population of females in tract between the ages of 55 and 59; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_60_64 IS 'Total population of females in tract between the ages of 60 and 64; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_65_69 IS 'Total population of females in tract between the ages of 65 and 69; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_70_74 IS 'Total population of females in tract between the ages of 70 and 74; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_75_79 IS 'Total population of females in tract between the ages of 75 and 79; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_80_84 IS 'Total population of females in tract between the ages of 80 and 84; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.female_85_over IS 'Total population of females in tract 85 years of age and over; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.median_age IS 'Median age of population in tract; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.median_age_male IS 'Median age of male population in tract ; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.median_age_female IS 'Median age of female population in tract; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop_over_16 IS 'Total population in tract over 16 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_male_over_16 IS 'Total population of males in tract over 16 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_female_over_16 IS 'Total population of females in tract over 16 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop_over_18 IS 'Total population in tract over 18 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_male_over_18 IS 'Total population of males in tract over 18 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_female_over_18 IS 'Total population of females in tract over 18 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop_over_21 IS 'Total population in tract over 21 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_male_over_21 IS 'Total population of males in tract over 21 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_female_over_21 IS 'Total population of females in tract over 21 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop_over_62 IS 'Total population in tract over 62 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_male_over_62 IS 'Total population of males in tract over 62 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_female_over_62 IS 'Total population of females in tract over 62 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop_over_65 IS 'Total population in tract over 65 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_male_over_65 IS 'Total population of males in tract over 65 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_female_over_65 IS 'Total population of females in tract over 65 years of age; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop2 IS 'Total population in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace IS 'Total population in tract reporting one race; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_white IS 'Total population in tract reporting one race as white; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_aa IS 'Total population in tract reporting one race as black/African-American; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_aian IS 'Total population in tract reporting one race as American Indian/Alaska Native (aian); Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian IS 'Total population in tract reporting one race as asian; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_asianindian IS 'Total population in tract reporting one race as asian, asian-indian; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_chinese IS 'Total population in tract reporting one race as asian, chinese; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_filipino IS 'Total population in tract reporting one race as asian, filipino; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_japanese IS 'Total population in tract reporting one race as asian, japanese; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_korean IS 'Total population in tract reporting one race as asian, korean; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_vietnamese IS 'Total population in tract reporting one race as asian, vietnamese; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_asian_other IS 'Total population in tract reporting one race as asian, other; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_nhopi IS 'Total population in tract reporting one race as Native Hawaiian or other Pacific Islander (nhopi); Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_nhopi_nh IS 'Total population in tract reporting one race as nhopi, native Hawaiian; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_nhopi_guam IS 'Total population in tract reporting one race as nhopi, guam; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_nhopi_samoan IS 'Total population in tract reporting one race as nhopi, samoan; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_nhopi_opi IS 'Total population in tract reporting one race as nhopi, other Pacific Islander; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_onerace_other IS 'Total population in tract reporting one race as other; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_tworaceormore IS 'Total population in tract reporting two races or more; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_tworaceormore_whiteaian IS 'Total population in tract reporting two races or more as white and American Indian/Alaska Native; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_tworaceormore_whiteasian IS 'Total population in tract reporting two races or more as white and asian; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_tworaceormore_whiteaa IS 'Total population in tract reporting two races or more as white and black or African-American; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_tworaceormore_whiteother IS 'Total population in tract reporting two races or more as white and some other race; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.whitealoneorcombo IS 'Total population in tract reporting white alone or in combination with one or more other races; Universe: Races tallied';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.aaaloneorcombo IS 'Total population in tract reporting black or African American alone or in combination with one or more other races; Universe: Races tallied';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.aianaloneorcombo IS 'Total population in tract reporting American Indian and Alaska Native alone or in combination with one or more other races; Universe: Races tallied';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.asianaloneorcombo IS 'Total population in tract reporting Asian alone or in combination with one or more other races; Universe: Races tallied';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nhopialoneorcombo IS 'Total population in tract reporting Native Hawaiian and Other Pacific Islander alone or in combination with one or more other races; Universe: Races tallied';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.otheraloneorcombo IS 'Some Other Race alone or in combination with one or more other races; Universe: Races tallied';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop3 IS 'Total population in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_hispanyrace IS 'Total population in tract reporting hispanic of any race; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hispanyrace_mexican IS 'Total population in tract reporting hispanic of any race as Mexican; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hispanyrace_puertorican IS 'Total population in tract reporting hispanic of any race as Puerto Rican; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hispanyrace_cuban IS 'Total population in tract reporting hispanic of any race Cuban; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hispanyrace_otherhisp IS 'Total population in tract reporting hispanic of any race other Hispanic; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_nonhisp IS 'Total population in tract reporting as non-Hispanic; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop4 IS 'Total population in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_hisp IS 'Total population in tract reporting as Hispanic; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_whitealone IS 'Total population in community reporting as Hispanic and white alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_aaalone IS 'Total population in community reporting as Hispanic and black/African-American alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_aianalone IS 'Total population in community reporting as Hispanic and American Indian/Alaskan Native alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_asianalone IS 'Total population in community reporting as Hispanic and asian alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_nhopialone IS 'Total population in community reporting as Hispanic and Native Hawaiian or other Pacific Islander alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_otheralone IS 'Total population in community reporting as Hispanic and other race alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hisp_twoormore IS 'Total population in community reporting as Hispanic and two or more races; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_nonhisp2 IS 'Total population in tract reporting as non-Hispanic; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_whitealone IS 'Total population in community reporting as non-Hispanic and white alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_aaalone IS 'Total population in community reporting as non-Hispanic and black/African-American alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_aianalone IS 'Total population in community reporting as non-Hispanic and American Indian/Alaskan Native alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_asianalone IS 'Total population in community reporting as non-Hispanic and asian alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_nhopialone IS 'Total population in community reporting as non-Hispanic and Native Hawaiian or other Pacific Islander alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_otheralone IS 'Total population in community reporting as non-Hispanic and other race alone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.nonhisp_twoormore IS 'Total population in community reporting as non-Hispanic and two or more races; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_pop5 IS 'Total population in tract; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_inhh IS 'Total population in tract in households; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_householder IS 'Total population in community in households who are a aaalone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_spouse IS 'Total population in community in households who are a aianalone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_child IS 'Total population in community in households who are a asianalone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_child_ownchildunder18 IS 'Total population in tract in households who are an own child under 18 ; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_otherrelative IS 'Total population in community in households who are an otheralone; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_otherrelative_under18 IS 'Total population in tract in households who are an otherrelative under the age of 18; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_otherrelative_65over IS 'Total population in tract in households who are an otherrelative 65 years of age or older; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_nonrelatives IS 'Total population in tract in households who are nonrelatives; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_nonrelatives_under18 IS 'Total population in tract in households who are nonrelatives under 18; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_nonrelatives_65over IS 'Total population in tract in households who are nonrelatives 65 or over; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_hh_nonrelatives_unmarriedpartner IS 'Total population in tract in households who are nonrelatives and an unmarried partner; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_in_group IS 'Total population in tract in group quarters; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_group_inst IS 'Total population in tract in group quarters who are institutionalized; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_group_inst_male IS 'Total population in tract in group quarters who are institutionalized who are male; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_group_inst_female IS 'Total population in tract in group quarters who are institutionalized who are female; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_group_noninst IS 'Total population in tract in group quarters who are not institutionalized; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_group_noninst_male IS 'Total population in tract in group quarters who are not institutionalized who are male; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.pop_group_noninst_female IS 'Total population in tract in group quarters who are not institutionalized who are female; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_households IS 'Total households in tract; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_family IS 'Total households in tract with family; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_family_ownchildrenunder18 IS 'Total households in tract with family with own children under 18; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_husbandwifefam IS 'Total households in tract with husband-wife family; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_husbandwifefam_ownchildrenunder18 IS 'Total households in tract with husband-wife family and own children under 18 years; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_malenowifefam IS 'Total households in tract with male, no-female family; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_malenowifefam_ownchildrenunder18 IS 'Total households in tract with male, no-female family with own children under 18 years; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_femalenohusbandfam IS 'Total households in tract with female, no male family; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_femalenohusbandfam_ownchildrenunder18 IS 'Total households in tract with female, no male family with own children under 18 years; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_nonfamily IS 'Total households in tract, non-family households; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_nonfamily_livingalone IS 'Total households in tract, non-family households, living alone; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_nonfamily_livingalone_male IS 'Total households in tract, non-family households, living alone, male; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_nonfamily_livingalone_male_65over IS 'Total households in tract, non-family households, living alone, male, 65 or over; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_nonfamily_livingalone_female IS 'Total households in tract , non-family households, living alone, female; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_nonfamily_livingalone_female_65over IS 'Total households in tract , non-family households, living alone, female, 65 or over; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_withunder18 IS 'Total households with individuals under 18 years of age; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.hh_with65over IS 'Total households with individuals 65 years of age or over; Universe: total_households';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.avghouseholdsize IS 'Average household size in tract; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.avgfamilysize IS 'Average family size in tract; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_housingunits IS 'Total housing units in tract; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_occupied IS 'Total housing units in tract occupied ; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant IS 'Total housing units in tract vacant; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant_forrent IS 'Total housing units in tract vacant, for rent; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant_rentednotocc IS 'Total housing units in tract vacant, rented not occupied; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant_forsaleonly IS 'Total housing units in tract vacant, for sale only; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant_soldnotocc IS 'Total housing units in tract vacant, sold not occupied; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant_occasionaluse IS 'Total housing units in tract vacant, occasional use; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_vacant_othervacant IS 'Total housing units in tract vacant, all other vacants; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.homeownervacancyrate IS 'Homeowner vacancy rate; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.rentalvacancyrate IS 'rental vacancy rate; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.total_housingunits_occupied IS 'Total housing units in tract occupied; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_occupied_owneroccupied IS 'Total housing units in tract owner occupied; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.housingunits_occupied_renteroccupied IS 'Total housing units in tract renter occupied; Universe: total_housingunits';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.popinowneroccupiedhousingunits IS 'Total population in owner occupied housing units; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.popinrenteroccupiedhousingunits IS 'Total population in renter occupied housing units; Universe: total_pop';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.avghouseholdsizeowneroccupiedhousingunits IS 'Average household size in owner occupied housing units; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.avghouseholdsizerenteroccupiedhousingunits IS 'Average household size in renter occupied housing units; Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.shape_leng IS 'Census tract shape length (Census Bureau calculation); Universe: NA';
+COMMENT ON COLUMN $DB_SCHEMA.dp1.shape_area IS 'Census tract shape area (Census Bureau calculation); Universe: NA';
+"
+
+psql -h $DB_HOSTNAME -U $DB_USERNAME -p $DB_PORT -d $DATABASE -c "
+--create median age function
+DROP FUNCTION IF EXISTS $DB_SCHEMA.find_median_age(
+    total_pop numeric, 
+    total_under_5 numeric, 
+    total_5_9 numeric,
+    total_10_14 numeric,
+    total_15_19 numeric,
+    total_20_24 numeric,
+    total_25_29 numeric,
+    total_30_34 numeric,
+    total_35_39 numeric,
+    total_40_44 numeric,
+    total_45_49 numeric,
+    total_50_54 numeric,
+    total_55_59 numeric,
+    total_60_64 numeric,
+    total_65_69 numeric,
+    total_70_74 numeric,
+    total_75_79 numeric,
+    total_80_84 numeric
+    );
+
+CREATE OR REPLACE FUNCTION $DB_SCHEMA.find_median_age(
+    total_pop numeric, 
+    total_under_5 numeric, 
+    total_5_9 numeric,
+    total_10_14 numeric,
+    total_15_19 numeric,
+    total_20_24 numeric,
+    total_25_29 numeric,
+    total_30_34 numeric,
+    total_35_39 numeric,
+    total_40_44 numeric,
+    total_45_49 numeric,
+    total_50_54 numeric,
+    total_55_59 numeric,
+    total_60_64 numeric,
+    total_65_69 numeric,
+    total_70_74 numeric,
+    total_75_79 numeric,
+    total_80_84 numeric
+    ) RETURNS numeric AS \$\$ 
+    /*
+    A function to find the median age given the total population and the population counts for each age band. The median person
+    is found and then located in the appropiate age band in which they reside. Their position is determined relative to the last
+    person in the age band (assuming an even distribution throughout the age band) and their age is found by subtracting that
+    difference from the upper bound of the age band. 
+
+    This function is intended to take in population counts as reported in the 2010 US Census to return a valid result. A median 
+    age of 85.1 indicates the age was over 85 and couldnt be accurately calculated. 
+
+    The function not only takes in values directly from the table, but can accept aggregated values to allow analysis up to and
+    including Patch-wide values.  They are expected in the following order:
+      total_pop numeric, 
+      total_under_5 numeric, 
+      total_5_9 numeric,
+      total_10_14 numeric,
+      total_15_19 numeric,
+      total_20_24 numeric,
+      total_25_29 numeric,
+      total_30_34 numeric,
+      total_35_39 numeric,
+      total_40_44 numeric,
+      total_45_49 numeric,
+      total_50_54 numeric,
+      total_55_59 numeric,
+      total_60_64 numeric,
+      total_65_69 numeric,
+      total_70_74 numeric,
+      total_75_79 numeric,
+      total_80_84 numeric
+    Otherwise the result will be garbage.
+    */
+
+  DECLARE
+    median_age numeric;
+    median_person numeric := total_pop / 2; --numeric math with division will return round result
+    under_5  numeric := total_under_5;
+    under_10 numeric := total_under_5 + total_5_9;
+    under_15 numeric := total_under_5 + total_5_9 + total_10_14;
+    under_20 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19;
+    under_25 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24;
+    under_30 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29;
+    under_35 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34;
+    under_40 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39;
+    under_45 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44;
+    under_50 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49;
+    under_55 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54;
+    under_60 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54 + total_55_59;
+    under_65 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54 + total_55_59 + total_60_64;
+    under_70 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54 + total_55_59 + total_60_64 + total_65_69;
+    under_75 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54 + total_55_59 + total_60_64 + total_65_69 + total_70_74;
+    under_80 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54 + total_55_59 + total_60_64 + total_65_69 + total_70_74 + total_75_79;
+    under_85 numeric := total_under_5 + total_5_9 + total_10_14 + total_15_19 + total_20_24 + total_25_29 + total_30_34 + total_35_39 + total_40_44 + total_45_49 + total_50_54 + total_55_59 + total_60_64 + total_65_69 + total_70_74 + total_75_79 + total_80_84;
+
+  BEGIN
+    CASE 
+      WHEN median_person <= under_5  THEN median_age := ROUND(5  - ((under_5  - median_person) / total_under_5 * 5),2);
+      WHEN median_person <= under_10 THEN median_age := ROUND(10 - ((under_10 - median_person) / total_5_9   * 5),2);
+      WHEN median_person <= under_15 THEN median_age := ROUND(15 - ((under_15 - median_person) / total_10_14 * 5),2);
+      WHEN median_person <= under_20 THEN median_age := ROUND(20 - ((under_20 - median_person) / total_15_19 * 5),2);
+      WHEN median_person <= under_25 THEN median_age := ROUND(25 - ((under_25 - median_person) / total_20_24 * 5),2);
+      WHEN median_person <= under_30 THEN median_age := ROUND(30 - ((under_30 - median_person) / total_25_29 * 5),2);
+      WHEN median_person <= under_35 THEN median_age := ROUND(35 - ((under_35 - median_person) / total_30_34 * 5),2);
+      WHEN median_person <= under_40 THEN median_age := ROUND(40 - ((under_40 - median_person) / total_35_39 * 5),2);
+      WHEN median_person <= under_45 THEN median_age := ROUND(45 - ((under_45 - median_person) / total_40_44 * 5),2);
+      WHEN median_person <= under_50 THEN median_age := ROUND(50 - ((under_50 - median_person) / total_45_49 * 5),2);
+      WHEN median_person <= under_55 THEN median_age := ROUND(55 - ((under_55 - median_person) / total_50_54 * 5),2);
+      WHEN median_person <= under_60 THEN median_age := ROUND(60 - ((under_60 - median_person) / total_55_59 * 5),2);
+      WHEN median_person <= under_65 THEN median_age := ROUND(65 - ((under_65 - median_person) / total_60_64 * 5),2);
+      WHEN median_person <= under_70 THEN median_age := ROUND(70 - ((under_70 - median_person) / total_65_69 * 5),2);
+      WHEN median_person <= under_75 THEN median_age := ROUND(75 - ((under_75 - median_person) / total_70_74 * 5),2);
+      WHEN median_person <= under_80 THEN median_age := ROUND(80 - ((under_80 - median_person) / total_75_79 * 5),2);
+      WHEN median_person <= under_85 THEN median_age := ROUND(85 - ((under_85 - median_person) / total_80_84 * 5),2);
+      ELSE median_age := 85.1;
+    END CASE;
+    RETURN median_age;
+  END;
+\$\$ LANGUAGE plpgsql;
+"
+echo "Done creating median age function"

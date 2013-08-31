@@ -287,6 +287,6 @@ WITH buffer AS (
     --pop in owner occupied housing
     ROUND(popInOwnerOccupiedHousingUnits/total_pop,2) as percent_owner_occupied_housing,
     --pop in renter occupied housing
-    ROUND(popInRenterOccupiedHousingUnits/total_pop,2) as percent_renter_occuped_housing
+    ROUND(popInRenterOccupiedHousingUnits/total_pop,2) as percent_renter_occupied_housing
   FROM dem_raw_counts
   );

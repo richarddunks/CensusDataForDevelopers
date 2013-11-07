@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS demographics.demographic_data_by_711;
+
 CREATE TABLE demographics.demographic_data_by_711 AS (
 WITH buffer AS (
   --create buffer shapes around points
@@ -213,6 +215,8 @@ WITH buffer AS (
 
   SELECT 
     gid,
+    ROUND(total_male/total_pop,2) as percent_male_pop,
+    ROUND(total_female/total_pop,2) as percent_female_pop,
     --median age
     ROUND(demographics.find_median_age(
       total_pop,

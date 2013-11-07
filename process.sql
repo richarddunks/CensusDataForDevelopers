@@ -1,6 +1,6 @@
 
 --commands to generate tables
-shp2pgsql -I -s 4326 "manhattan_711_dedup.shp" demographics.manhattan_711 | psql -h localhost -d demographics
+shp2pgsql -I -s 4326 "manhattan_711_dedup.shp" demographics.manhattan_711 | psql -h localhost
 
 shp2pgsql -I -s 4269 "Tract_2010Census_DP1.shp" demographics.dp1 | psql -h localhost -q
 

@@ -73,11 +73,11 @@ SELECT
     ROUND(SUM(nonHisp_asianAlone::numeric)/SUM(total_pop::numeric),2) as percent_asian_nonhispanic,
     ROUND(SUM(nonHisp_nhopiAlone::numeric)/SUM(total_pop::numeric),2) as percent_native_hawaiian_other_pacific_islander_nonhispanic,
     ROUND(SUM(nonHisp_otherAlone::numeric)/SUM(total_pop::numeric),2) as percent_other_race_nonhispanic,
-    ROUND(SUM(total_hisp)/SUM(total_pop),2) as percent_hispanic,
+    ROUND(SUM(total_hisp::numeric)/SUM(total_pop::numeric),2) as percent_hispanic,
     --pop in owner occupied housing
-    ROUND(SUM(popInOwnerOccupiedHousingUnits)/SUM(total_pop),2) as percent_owner_occupied_housing,
+    ROUND(SUM(popInOwnerOccupiedHousingUnits::numeric)/SUM(total_pop::numeric),2) as percent_owner_occupied_housing,
     --pop in renter occupied housing
-    ROUND(SUM(popInRenterOccupiedHousingUnits)/SUM(total_pop),2) as percent_renter_occupied_housing
+    ROUND(SUM(popInRenterOccupiedHousingUnits::numeric)/SUM(total_pop::numeric),2) as percent_renter_occupied_housing
   FROM demographics.dp1
   INNER JOIN demographics.nyc_boro b
   ON ST_Intersects(dp1.geom, b.geom)
